@@ -3,7 +3,8 @@ body {
 	font-family: Ubuntu;
 	margin: 0;
 	background-color: white;
-	color: white;
+	color: rgb(64, 95, 72);
+	
 }	
 
 @font-face {      
@@ -12,6 +13,22 @@ body {
 	font-stretch: 75% 125%;
 	font-style: oblique 0deg 12deg;
 	src: url("Ubuntu-Light.ttf");
+}
+
+.bildkasten {
+	background-color: green;
+	position: relative;
+	z-index: 100;
+	float: ;
+    position: absolute;
+    left: 8%;
+    bottom: 7em;
+	height: 200px;
+	width: 200px;
+	
+}
+ {
+	z-index: 7200;
 }
 
 .topnav {
@@ -25,11 +42,12 @@ body {
 	display: block;
 	color: white;
 	text-decoration: none;
+	padding: 1%;
 }
 .Leiste {
 	padding-top: 20px;
 	padding-bottom: 20px;
-	padding-right: 20px;
+	padding-right: 40px;
 	color: white;
 	font-size: 150%;
 
@@ -39,7 +57,7 @@ body {
 	font-size: 80%;
 }
 .topnav a:hover {
-	color: rgb(143, 177, 60);
+	color: rgb(133, 177, 70);
 }
 #home {
 	float: left;
@@ -54,21 +72,21 @@ body {
 .grid-container {
 	display: grid;
 	grid-template-columns: 50% 50%;
-	grid-template-rows: 1fr 1fr 250px;
+	grid-template-rows: 1fr 250px;
 	grid-auto-rows: minmax(400px, auto);
 }
 
 #item1{
 	grid-column: 1/3;
 	grid-row: 1/2;
-	color: black;
-	margin-top: 7%;
-	padding: 30px;
+	margin-top: 2%;
+	margin-left: 15%;
 	overflow: hidden;
-	margin-bottom: 50px	
+	margin-right: 13%;
 }
+
 #item1 img {
-	float: center;
+
 }
 #item2 {
 	grid-column: 1/2;
@@ -101,6 +119,8 @@ body {
 	justify-content: left;
 	padding: 30px;
 	border-top: 6px solid #145229;
+	position: bottom;
+	color: black;
 }
 
 #footerinhalt {
@@ -108,19 +128,7 @@ body {
 	
 }
 
-.pfeil {
-	box-shadow: 2px 2px 10px black;
-	border-radius: 20px;
-	position: fixed;
-	width: 50px;
-	height: 50px;
-	bottom: 35px;
-	right:40px;
-	text-align: center;
-	line-height: 55px;
-	font-size: 30px;
-	color: #145229;
-}
+
 
 .impressum {
 	text-align: center;
@@ -139,59 +147,85 @@ a:hover {
 }
 
 .Karte {
-	margin-left: 15%;
+	margin-left: 18%;
 	margin-right: 15%;
 	margin-top: 8%;
-	box-shadow: 2px 2px 30px darkgreen;
+
+}
+.Legende{
+	margin-left: 18%;
+	margin-right: 15%;
+	margin-top: 2%;
 }
 
 
 .special_box_image img {
-width: 100%;
-position: relative;
-height: 100%;
-z-index: 1;
-object-fit: cover;
+	width: 100%;
+	position: relative;
+	height: 100%;
+	z-index: 1;
+	object-fit: cover;
 }
 
+.surnous {
+	margin-left: 15%;
+	margin-right: 15%;
+}
+.activites{
+	margin-left: 15%;
+	margin-right: 15%;
 
-
-
-
-
-
-table, th, td {
-  border: thin solid black;
-  overflow: hidden;
-  border-collapse: collapse;
-  font-size: 30px
-  width: 800px;
-  text-align: center;
-  margin-left: 20%;
-  margin-right: 20%; 
+	margin-bottom: 5%;
+}
+.region{
+	margin-left: 15%;
+	margin-right: 15%;
 }
 
-h1, table{
-text-align: center;
-}
+.section {
+     height: 100vh;
+     background: #dedede;
+     margin-bottom: 20px;
+     font-size: 100px;
+   }
+
+.scroll-container {
+     position: absolute;
+     top: 0;
+     right:0;
+     height: 100%;
+   }
+
+.scroll-container:before {
+     content: '';
+     display: block;
+     height: 100vh;
+     pointer-events: none;
+   }
+.scroll-container a {
+     position: sticky;
+     top: 88vh;
+     cursor: pointer;
+     font-size: 20px;
+   }
+
+.pfeil {
+   	box-shadow: 2px 2px 10px black;
+   	border-radius: 20px;
+   	position: fixed;
+   	width: 50px;
+   	height: 50px;
+   	bottom: 35px;
+   	right:40px;
+   	text-align: center;
+   	line-height: 55px;
+   	font-size: 30px;
+   	color: #145229;
+   }
 
 h1{
   font-size:50px;
+  margin-top: 12%;
+  text-align: left;
+  margin-left: 10%;
 }
-td {
-  background-color: #E6C79B;	
-  
-  
-}
-th{
-  width: 30%;
-  background-color: #cc8c33;
-}
-
-float: right;
-display: block;
-color: black;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-padding-top: 20px;
