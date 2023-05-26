@@ -27,8 +27,10 @@ body {
 	width: 200px;
 	
 }
- {
-	z-index: 7200;
+.surnous img {
+	filter: drop-shadow(-20px 20px 0 rgb(172, 229, 149)); 
+	z-index: 0;
+	margin-left: 5%;
 }
 
 .topnav {
@@ -43,6 +45,7 @@ body {
 	color: white;
 	text-decoration: none;
 	padding: 1%;
+	z-index: 100;
 }
 .Leiste {
 	padding-top: 20px;
@@ -149,7 +152,7 @@ a:hover {
 .Karte {
 	margin-left: 18%;
 	margin-right: 15%;
-	margin-top: 8%;
+	margin-top: 3%;
 
 }
 .Legende{
