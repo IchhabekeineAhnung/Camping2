@@ -232,3 +232,18 @@ h1{
   text-align: left;
   margin-left: 10%;
 }
+
+.quellen h1 {
+	float: left;
+}
+.quellen {
+	margin-left: 2%;
+	margin-right:2%;
+}
+.impressum h1 {
+	float: left;
+}
+.impressum {
+	margin-left: 2%;
+	margin-right:2%;
+}
