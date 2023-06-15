@@ -233,17 +233,14 @@ h1{
   margin-left: 10%;
 }
 
-.quellen h1 {
-	float: left;
-}
+
 .quellen {
-	margin-left: 2%;
+	margin-left: 10%;
 	margin-right:2%;
 }
-.impressum h1 {
-	float: left;
-}
+
 .impressum {
-	margin-left: 2%;
+	margin-left: 10%;
 	margin-right:2%;
+	text-align: left
 }
